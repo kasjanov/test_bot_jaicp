@@ -14,7 +14,11 @@ theme: /
         intent: /Часы работы || onlyThisState = false, toState = "/Часы работы"
         intent: /Оставить отзыв || onlyThisState = false, toState = "/Отзыв о работе"
         intent: /sys/ru/aimylogic/parting || onlyThisState = false, toState = "/Bye"
-
+    
+    state: Hello
+        q!:$regex</hello>
+        a: привет
+    
     state: Bye
         a: Пока-пока!
         EndSession:
